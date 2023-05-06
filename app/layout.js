@@ -17,8 +17,13 @@ export default function RootLayout({ children }) {
           {/* use Link instead of a tag */}
           <Link href="/">Home</Link>
           <Link href="/list">List</Link>
+          <Link href="/register">Register</Link>
         </div>
-        {children}</body>
+        {/* page.js goes into this line 
+          page.js 옆에 layout.js가 있으면 그걸로 감싸서 보여주고, 그 상위 폴더에 layout.js 가 있으면 그걸로 한번 더 감싸주고, 모든 상위 폴더 반복
+        */}
+        {children}
+      </body>
     </html>
   )
 }
