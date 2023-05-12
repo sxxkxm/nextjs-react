@@ -1,3 +1,10 @@
+import Navbar from "@/components/navbar";
+
 export default function About(){
-  return "about us";
+  return (
+    <div>
+      <Navbar/>
+      <h1>About Us</h1>
+    </div>
+  );
 }
